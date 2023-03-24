@@ -1,0 +1,24 @@
+### 스트림키 생성
+POST {{backend_api}}/stream
+Content-Type: application/json
+
+{
+  "streamKey": "test"
+}
+
+### ?? 이게 된다고?
+POST http://stream.hannah-log.site:4242/api/v3/channels/webrtc/create
+
+{
+  "id": "myStream",
+  "webRTC": {
+    "video": {
+      "codec": "h264",
+      "bitrate": 2000
+    }
+  },
+  "authorize" : {
+    "username": "coals0329",
+    "password": "5e185eaee485ca8936f080e1b8d869a0"
+  }
+}
